@@ -1,6 +1,7 @@
 import java.util.*;
 class Receptionist extends Employee{
     private String receptID;
+    ArrayList<Booking> bookings;
 
     public Receptionist(String name, int contactNumber, double Salary, String receptID) {
         super(name, contactNumber, Salary);
@@ -8,6 +9,7 @@ class Receptionist extends Employee{
     }
 
     public void checkIn(){
+        // check if room is available before taking guest data
         System.out.println("Enter Guest Details : ");
         System.out.print("Enter name : ");
         String name = sc.nextLine();
