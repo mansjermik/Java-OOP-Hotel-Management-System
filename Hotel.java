@@ -131,7 +131,7 @@ public class Hotel {
                         int mChoice = Input.sc.nextInt();
 
                         switch (mChoice) {
-                            case 1: addRoom(); break;
+                            case 1:addRoom(); break;
                             case 2:removeRoom();break;
                             case 3:searchRoom();break;
                             case 4:displayRooms();break;
